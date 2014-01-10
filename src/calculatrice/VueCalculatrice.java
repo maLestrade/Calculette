@@ -6,6 +6,7 @@
 
 package calculatrice;
 
+import java.awt.Color;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
@@ -45,7 +46,8 @@ public class VueCalculatrice extends JFrame implements WindowListener
                 this.setSize(229, 279);
                 this.setContentPane(getPnlPrincipal());
                 this.setResizable(false);
-                this.addWindowListener(this);
+                this.addWindowListener(this);   
+                //TODO : ajout d'un titre à la fenêtre
                 this.show();
         }
         private javax.swing.JPanel getPnlPrincipal()
@@ -87,8 +89,11 @@ public class VueCalculatrice extends JFrame implements WindowListener
                                                         btn.setText("0");
                                                 if ((i + j) == -1)
                                                         btn.setText(".");
-                                                if ((i + j) > 0)
-                                                        btn.setText(String.valueOf(i + j));
+                                                if ((i + j) > 0){
+                                                    
+                                                        btn.setText(String.valueOf(i+j));
+                                                        //TODO: Ajout de couleur aux chiffres du pad numérique
+                                                }
                                                 btn.addActionListener(action);
                                                 pnlNombres.add(btn);
                                         }
