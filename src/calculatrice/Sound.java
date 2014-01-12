@@ -22,6 +22,8 @@ public class Sound {
                         new File(path)));
         player = new AdvancedPlayer(in);
         player.setPlayBackListener(listener);
+        
+        //le karaté c'est cool!!
     }
 
     public void play() throws Exception {
