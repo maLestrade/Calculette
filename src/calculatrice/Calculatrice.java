@@ -230,4 +230,10 @@ public class Calculatrice implements ActionListener {
         modeResultat = false;
     }
 
+    /**
+     * Lance le son "sound.mp3" dans un thread
+     */
+    public void lanceSon() {
+        //TODO: implémenter la méthode
+    }
 }

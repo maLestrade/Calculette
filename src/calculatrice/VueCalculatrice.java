@@ -89,8 +89,7 @@ public class VueCalculatrice extends JFrame implements WindowListener
                                                         btn.setText("0");
                                                 if ((i + j) == -1)
                                                         btn.setText(".");
-                                                if ((i + j) > 0){
-                                                    
+                                                if ((i + j) > 0){               
                                                         btn.setText(String.valueOf(i+j));
                                                         //TODO: Ajout de couleur aux chiffres du pad numérique
                                                 }
